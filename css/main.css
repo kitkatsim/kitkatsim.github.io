@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,500i,700');
+
+body {
+  margin: 0;
+  font-family: 'Roboto',sans-serif;
+  background-color:#303030;
+}
+
+* {-webkit-font-smoothing: antialiased;}
+
+.email {
+  margin: 0;
+  font-size:1.3em;
+  font-weight: 500;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.titles {
+  font-weight: 500;
+  font-size: 2.0em;
+  margin: 2em auto 1.5em auto;
+  color: #FFFFFF;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.6em;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+nav {
+  justify-content: space-between;
+  right: 0px;
+  padding: 2em 6em;
+  height: 1.5em;
+  overflow: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav ul {
+  overflow: hidden;
+  display:block;
+  width: auto;
+  background: none;
+  height: auto;
+  display: flex;
+  float: right;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  color: black;
+  text-align: right;
+  width: 100%;
+  padding: 1em 2em;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: rgba(255,255,255,0.7);
+}
+
+nav ul li a:hover {
+  color: #FFFFFF
+}
+
+h1 {
+  font-size: 3em;
+  color: #FFFFFF;
+  margin: 0.1em;
+}
+
+.container {
+  text-align: center;
+}
+
+section {
+  background-color: #424242;
+  margin: 0;
+  padding: 3em 2em 5em 2em;
+}
+
+.show-desktop {
+  display: block;
+  margin: auto;
+}
+
+.hide-desktop {
+  display: none;
+}
+
+
+.animated-cube {
+    margin: 15em;
+}
+
+.cube {
+  transform-style: preserve-3d;
+  animation: spin 5s infinite ease;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  top: 50%;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -50px;
+}
+
+.cube div {
+   width: 100px;
+   height: 100px;
+   text-align: center;
+   position: absolute;
+}
+
+.cube div.top {
+   transform: rotateX(90deg);
+  background: rgba(255,255,255,0.7);
+  margin-top: -50px;
+}
+
+.cube div.right {
+   transform: rotateY(90deg); 
+  background: rgba(255, 255, 255, 0.4);
+  margin-left: 50px;
+}
+
+.cube div.bottom {
+   transform: rotateX(-90deg); 
+  background: rgba(255, 255, 255, 0.7);
+  margin-top: 50px;
+}
+
+.cube div.left {
+   transform: rotateY(-90deg); 
+  background: rgba(255, 255, 255, 0.4);
+  margin-left: -50px;
+}
+
+.cube div.front {
+  transform: translateZ(50px);
+  background: rgba(255,255,255, 0.3);
+}
+
+.cube div.back {
+  transform: translateZ(-50px) rotateX(180deg);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+@keyframes spin {
+  0% {transform: rotateX(-30deg) rotateY(45deg);}
+  10% {transform: rotateX(-30deg) rotateY(45deg);}
+  
+  55% {transform: rotateX(-30deg) rotateY(225deg);}
+
+  100% {transform: rotateX(-390deg) rotateY(225deg);}
+}
+
+.grey-container {
+  margin: 5% 15%;
+  padding: 2em;
+  border-radius: 30px;
+  background-color: #424242;
+}
+
+.about-me {
+  margin-bottom: 2em;
+}
+
+.experience {
+  margin-bottom: -1em;
+}
+
+h2 {
+  color: #FFFFFF;
+}
+h3 {
+  color: #FFFFFF;
+  font-weight: 500;
+}
+
+.job-title {
+  font-style: italic;
+  margin-bottom: 2em;
+}
+
+ul.work{
+  list-style-type: square;
+  margin-left: 3em;
+}
+
+ul.work li{
+  font-size: 1em;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.7em;
+  margin-top: -1.5em;
+}
+
+ul.workplace li {
+  margin-bottom: 2.5em;
+}
+
+.footer-container {
+  margin-bottom: 5em;
+}
+
+#linkedin,#github{
+  fill: #FFFFFF;
+}
+
+
+#linkedin:hover,#github:hover{
+  fill: orange;
+}
+
+.reference {
+  margin: 1em;
+}
+
+.reference a {
+  
+  color:white;
+  text-decoration: none;
+}
+
+.reference a:hover {
+  
+  color:orange;
+  text-decoration: underline;
+}
+
+.find-me {
+  font-style: italic;
+  font-weight: 500;
+}
