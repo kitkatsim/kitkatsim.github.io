@@ -10,19 +10,22 @@
 </head>
 
 <body>
-    <div class="nav">
-        <nav>
-            <a href="#" class="hide-desktop">
-                <img src="images/ham.svg" alt="toggle menu" class="menu" id="menu">
-            </a>
-            <ul class="show-desktop hide-mobile" id="nav">
-                <li id="exit" class="exit-btn hide-desktop"><img src="images/exit.svg" alt="exit menu"></li>
+    <div class="nav" id="navbar">
+        <a href="#" class="hide-desktop show-mobile">
+            <img src="images/ham.svg" alt="toggle menu" class="menu" id="menu">
+        </a>
+        <nav class="hide-mobile" id="nav">
+
+            <ul class="show-desktop">
+                <li id="exit" class="exit-btn hide-desktop show-mobile"><img src="images/exit.svg" alt="exit menu"></li>
                 <li><a href="#">home</a></li>
                 <li><a href="https://github.com/kitkatsim" target="_blank">github</a></li>
                 <li><a href="https://drive.google.com/open?id=1R4UodECZzrKZUUl30AdEWWAcKXVQNVQv"
                         target="_blank">resume</a></li>
             </ul>
         </nav>
+
+
     </div>
 
     <div class="container">
@@ -112,6 +115,24 @@
 
     </footer>
 
+    <script>
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+
+        menu.addEventListener('click', function (e) {
+            let a = nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+        exit.addEventListener('click', function (e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+
+
+
+
+    </script>
 </body>
 
 </html>
