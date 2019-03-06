@@ -256,6 +256,9 @@ ul.workplace li {
   .titles {
     font-size: 1.5em;
   }
+  nav {
+    padding: 1.5em 4em;
+  }
   nav ul li a {
     padding: 1em 2em;
     font-size: 0.9em;
@@ -267,10 +270,10 @@ ul.workplace li {
   section {
     background-color: #424242;
     margin: 0;
-    padding: 3em 2em 3em 2em;
+    padding: 3em 2em 2em 2em;
   }
   .animated-cube {
-    margin: 10em;
+    margin: 8em;
   }
   .cube {
     width: 76px;
