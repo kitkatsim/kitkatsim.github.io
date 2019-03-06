@@ -365,14 +365,17 @@ ul.workplace li {
     float: left;
   }
 
+  nav ul li {
+    width: 100%;
+  }
+
   nav ul li a {
     color: rgba(255,255,255,0.7);
     text-decoration: none;
     display: block;
-    width: 100%;
-    padding: 1em 5em;
     background: #212121;
     text-align: left;
+    font-size: 1.2em;
   }
 
   nav ul li a:hover {
