@@ -33,8 +33,11 @@ nav {
   justify-content: space-between;
   right: 0px;
   padding: 2em 6em;
-  height: 1.5em;
+  background-color: #303030;
+  top: 0;
   overflow: hidden;
+  position: fixed;
+  width: 100%;
 }
 
 ul {
@@ -63,7 +66,7 @@ nav ul li a {
   width: 100%;
   padding: 1em 2em;
   text-decoration: none;
-  font-size: 1.2em;
+  font-size: 1.1em;
   color: rgba(255,255,255,0.7);
 }
 
@@ -74,7 +77,8 @@ nav ul li a:hover {
 h1 {
   font-size: 3em;
   color: #FFFFFF;
-  margin: 0.1em;
+  margin-bottom: 0.1em;
+  margin-top: 2em;
 }
 
 .container {
