@@ -75,6 +75,13 @@ nav ul li a {
 nav ul li a:hover {
   color: #FFFFFF
 }
+p a {
+  color: orange
+}
+
+p a:hover {
+  color: #FFFFFF
+}
 
 h1 {
   font-size: 3em;
