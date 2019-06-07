@@ -229,6 +229,9 @@ ul.workplace li {
 
 
 @media only screen and (max-height: 720px), only screen and (max-width: 1366px) {
+  .carousel-item img {
+    height: 600px;
+  }
   h1 {
     font-size: 2em;
   }
@@ -290,8 +293,16 @@ ul.workplace li {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px){
+  .carousel-item img {
+    height: 450px;
+  }
+}
 
+@media only screen and (max-width: 600px) {
+  .carousel-item img {
+    height: 300px;
+  }
   .hide-mobile {
     display: none;
   }
