@@ -38,3 +38,12 @@ ul.work li{
     line-height: 1.7em;
     margin-top: auto;
 }
+@media only screen and (max-width: 600px) {
+
+    .grey-container {
+        margin: 5% 5%;
+        padding: 2em;
+        border-radius: 20px;
+        background-color: #424242;
+    }
+}
