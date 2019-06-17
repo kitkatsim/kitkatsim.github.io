@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sim's home</title>
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -39,7 +41,8 @@
     </div>
 
     <div class="scroll-prompt">
-        <svg xmlns="http://www.w3.org/2000/svg" width="90.087" height="47.728" viewBox="0 0 90.087 47.728" class="scroll">
+        <svg xmlns="http://www.w3.org/2000/svg" width="90.087" height="47.728" viewBox="0 0 90.087 47.728"
+            class="scroll">
             <g id="iconfinder_angle-down-arrow-direction-bottom_3209391" transform="translate(-1.293 -12.44)">
                 <path id="Path_15" data-name="Path 15"
                     d="M91.38,15.125,88.694,12.44,46.337,54.8,3.98,12.44,1.293,15.125,46.337,60.168Z"
@@ -52,7 +55,7 @@
         <div class="about-me">
             <h2>About Me</h2>
             <p>I'm from Malaysia! I travelled 9062 miles to the United States for university studies.
-                I'm currently an undergraduate computer science student, anticipated to graduate in May 2019.<br />
+                I graduated from the University of Nebraska–Lincoln with a BS in Computer Science in 2019.<br />
                 My interest lies in web development and software development.
                 Looking forward to any job & internship opportunities in the field! </p>
         </div>
@@ -63,13 +66,16 @@
                     <h3>Nebraska Environmental Trust</h3>
                     <p class="job-title">Web Developer (2018-2019)</p>
                     <ul class="work">
-                        <li>Created an online application using ASP.NET & Microsoft SQL to manage grant applications.
+                        <li>Develop on an existing online application using ASP.NET & Microsoft SQL to manage grant
+                            applications.
                         </li>
-                        <li>Allow project manager and grant administrators to submit and review budget estimations and
+                        <li>Implemented features to allow project manager and grant administrators to submit and review
+                            budget estimations and
                             disbursements.</li>
-                        <li>Developed on both front-end and back-end in the online application.</li>
+                        <li>Developed on both front-end and back-end of the online application.</li>
                     </ul>
-                    <p>Click <a href="http://demo.environmentaltrustgrants.org" target="_blank">here</a> for a demo of the web application</p>
+                    <p>Click <a href="http://demo.environmentaltrustgrants.org" target="_blank">here</a> for a demo of
+                        the web application</p>
                 </li>
                 <li>
                     <h3>University of Nebraska-Lincoln</h3>
@@ -117,6 +123,7 @@
     </footer>
 
     <script>
+
         var menu = document.getElementById('menu');
         var nav = document.getElementById('nav');
         var exit = document.getElementById('exit');
@@ -130,7 +137,15 @@
             e.preventDefault();
         });
 
+        $(window).scroll(function () {
 
+            if ($(this).scrollTop() > 0) {
+                $('.scroll-prompt').fadeOut();
+            }
+            else {
+                $('.scroll-prompt').fadeIn();
+            }
+        });
 
 
     </script>

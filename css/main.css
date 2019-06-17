@@ -73,7 +73,7 @@ nav ul li {
 nav ul li a {
   text-align: right;
   width: 100%;
-  padding: 0 2em;
+  padding: 1em 2em;
   text-decoration: none !important;
   font-size: 1.1em;
   color: rgba(255,255,255,0.7);
@@ -119,7 +119,11 @@ section {
 }
 
 .scroll-prompt {
-  margin: 15em;
+  position: fixed;
+  left: 50%;
+  bottom: 0px;
+  margin-bottom: 3em;
+  margin-left: -50px; /* adjust offset to center the scroll prompt */
   text-align: center;
   animation: move 3s infinite ease;
 }
@@ -150,7 +154,7 @@ section {
 }
 
 .grey-container {
-  margin: 5% 15%;
+  margin: 15% 15% 5% 15%;
   padding: 2em;
   border-radius: 30px;
   background-color: #424242;
@@ -227,6 +231,47 @@ ul.workplace li {
   font-weight: 500;
 }
 
+@media only screen and (max-height: 900px), only screen and (max-width: 1600px) {
+  h1 {
+    font-size: 2.5em;
+  }
+  .email {
+    margin: 0;
+    font-size: 1.2em;
+  }
+  .titles {
+    font-size: 1.5em;
+  }
+  nav {
+    padding-top: 1.5em;
+    padding-right: 4em;
+  }
+  nav ul li a {
+    padding: 1em 2em;
+    font-size: 0.9em;
+    color: rgba(255,255,255,0.7);
+  }
+  .web {
+    width: 5em;
+  }
+
+  .scroll {
+    width: 75px;
+    height: 75px;
+  }
+
+  .scroll-prompt {
+    margin-left: -37px; /* adjust offset to center the scroll prompt */
+  }
+
+  p {
+    font-size: 1em;
+  }
+  ul.work li{
+    font-size: 0.9em;
+  }
+}
+
 
 
 @media only screen and (max-height: 720px), only screen and (max-width: 1366px) {
@@ -256,13 +301,13 @@ ul.workplace li {
     width: 5em;
   }
 
-  .scroll-prompt {
-    margin: 9em 0;
-  }
-
   .scroll {
     width: 75px;
     height: 75px;
+  }
+
+  .scroll-prompt {
+    margin-left: -37px; /* adjust offset to center the scroll prompt */
   }
 
   p {
@@ -270,27 +315,6 @@ ul.workplace li {
   }
   ul.work li{
     font-size: 0.9em;
-  }
-}
-
-@media only screen and (max-height: 1000px) {
-  .scroll-prompt {
-    margin-top: 15em;
-    margin-bottom: 10em;
-  }
-}
-
-
-@media only screen and (max-height: 700px) {
-  .scroll-prompt {
-    margin: 10em 0;
-  }
-}
-
-
-@media only screen and (max-height: 600px) {
-  .scroll-prompt {
-    margin: 7em 0;
   }
 }
 
@@ -367,7 +391,7 @@ ul.workplace li {
     background: #616161;
   }
   .grey-container {
-    margin: 5% 5%;
+    margin: 50% 5% 5% 5%;
     padding: 2em;
     border-radius: 20px;
     background-color: #424242;
