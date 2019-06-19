@@ -74,7 +74,7 @@ nav ul li {
 nav ul li a {
   text-align: right;
   width: 100%;
-  padding-bottom:1em;
+  padding: 1.5em 2em;
   text-decoration: none !important;
   font-size: 1.1em;
   color: rgba(255,255,255,0.7);
