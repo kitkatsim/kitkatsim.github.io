@@ -159,15 +159,15 @@ section {
 }
 
 .slide-in {
-  animation: slide-in 0.5s ease;
+  animation: slide-in 1s ease;
 }
 
 @keyframes slide-in {
   0% {
-      transform: translateX(10%);
+      transform: translateY(20%);
   }
   100% {
-      transform: translateX(0%);
+      transform: translateY(0%);
   }
 }
 
