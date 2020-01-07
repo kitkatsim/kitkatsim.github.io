@@ -2,7 +2,7 @@
   margin: 5% 15%;
   padding: 2em 2em 1.5em 2em;
   border-radius: 30px;
-  background-color: #424242;
+  background-color: #303030;
 }
 
 .carousel .carousel-indicators li {
@@ -44,6 +44,5 @@ ul.work li{
         margin: 5% 5%;
         padding: 2em;
         border-radius: 20px;
-        background-color: #424242;
     }
 }
