@@ -1,2 +1,2 @@
 # personal-website-dark
-a little website I made with just html and css
+a small website I made with just html and css, and very little javascript
